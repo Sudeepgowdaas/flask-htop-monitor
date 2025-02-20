@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/htop')
 def htop():
     name = "SUDEEPGOWDA A S"
-    username = os.getenv("Sudeep Divya", "codespace")
+    username = os.getenv("USERNAME", "codespace")
     server_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S IST")
     
     # Get top command output
